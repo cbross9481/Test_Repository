@@ -1,0 +1,10 @@
+section {
+	float:left;
+	display:inline;
+}
+main{
+	width:900px;
+	float:left;
+	vertical-align-top;
+	display:inline;
+}
