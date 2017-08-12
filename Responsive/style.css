@@ -1,0 +1,21 @@
+h1{
+	width:500px;
+	background-color:green;
+	text-align:center;
+}
+#firstP{
+	background-color:blue;
+	width:250px;
+	float:left;
+}
+#SecondP{
+	background-color:red;
+	width:250px;
+	float:left;
+}
+@media screen and (max-width:490)
+{
+	body{
+		background-color:blue;
+	}
+}
