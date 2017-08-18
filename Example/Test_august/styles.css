@@ -1,0 +1,13 @@
+body {
+	border: 5px solid orange;
+	text-align: center;
+	padding:5%;
+	background-color:#1aa3ff;
+}
+form {
+	color:darkblue;
+}
+h1 {
+	font-family:"Script MT Bold";
+	font-size:125px;
+}
