@@ -5,10 +5,11 @@ while elevator
 response=gets.chomp
 if response=="yes" || response=="Yes" || response=="YES"
 x=true #Initiate boolean variable for elevator stimulation
+z=true #Initiate boolean variable to validate entry for Destination Floor
+while x
 elevator=false #Terminate response stimulation to activate elevator stimulation
 elsif response=="no" || response=="No" || response=="NO"
 puts "Good Bye!" #Terminate Progarm
-else 
   puts "Didn't understand, Please answer Yes or No"
 elevator=true #Loop response stimulation for valid entry
 end 
@@ -16,14 +17,13 @@ end
 
 #Departing and Destination value input
 y=true #Initiate boolean variable to validate entry for Departing Floor
-z=true #Initiate boolean variable to validate entry for Destination Floor
-while x
 while y
 puts "Which floor are you currently on?"
 departing_floor=gets.chomp
 departing_floor=departing_floor.to_i 
 if departing_floor>50 || departing_floor<1
   puts "no such floor, please try again"
+else 
   y=true
 else
   y=false
@@ -104,3 +104,4 @@ elsif answer_1>departing_floor
 end 
 end 
 end 
+new_arrival=rand(dearting_floor,desitnation_floor)
