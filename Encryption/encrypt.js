@@ -58,6 +58,7 @@ function symbol_check(password){
  //Driver Mode
 console.log ("Welcome to the User Name encryption program");
 console.log ("Pleas enter a user name in the space below:");
+console.log("password must contain: uppercase, lowercase, no spaces and one of the following symbols[!@#$%&?]");
 var username = prompt("Enter user name");
 console.log (username);
 var username_array = username.split("");
