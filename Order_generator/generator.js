@@ -42,18 +42,74 @@ for (i = 0; i < 10; i++){
 return store;
 }
 
-//Function that selects 10 orders from a list of 30 randomly
-function Order_Selection(Order_list){
-var num_select = Generate_Number();
-Orders_Processing = [];
-  for (i = 0; i < 10; i++){
-   Orders_Processing.push((Order_list[num_select[i]]));
-  }
-  return Orders_Processing
+function Generate_Number_2(Order_list){
+store = [];
+var push = true;
+for (i = 0; i < 5; i++){
+  x = (Math.floor(Math.random() * Order_list.length));
+}
+for (i = 0; i < 10; i++){
+  x = (Math.floor(Math.random() * Order_list.length));
+    for (y = 0; y < store.length; y++){
+      if (x == store[y]){
+      push = false;
+      break;
+      }
+    }
+      if (push === true){
+        store.push(x);
+      }
+      else{
+        i -= 1;
+        push =true;
+      }
+}
+return store;
 }
 
+//Function that selects 10 orders from a list of 30 randomly
+function Order_Processing(Order_list){
+var num_select = Generate_Number_2(Order_list);
+Orders_Processing = [];
+  for (i = 0; i < 10; i++){
+    x = (Order_list[num_select[i]]);
+   Orders_Processing.push(x);
+  }
+  return Orders_Processing;
+}
+
+//Function that removes Orders being processed from list
+function List_Removal(){
+  for (i=0; i<Orders.length; i++){
+    Order_list.splice(Order_list.indexOf(Orders[i]),1);
+  }
+  return Order_list;
+}
+
+
+//DRIVER MODE
+
 var Order_list = (Order_List());
-var Orders = Order_Selection(Order_list);
+//Order list before processing
 console.log(Order_list);
 console.log(" ");
+
+//Processing Orders
+var Orders = Order_Processing(Order_list);
 console.log(Orders);
+console.log(" ");
+
+//Update new List with processed orders removed
+var Orders_list = List_Removal();
+console.log(Orders_list);
+console.log(" ");
+
+//Processing second round of Orders
+var Orders = Order_Processing(Order_list);
+console.log(Orders);
+console.log(" ");
+
+//Update new list with processed orders removed
+var Orders_list = List_Removal();
+console.log(Orders_list);
+console.log(" ");
