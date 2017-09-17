@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grocery List</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="header">Welcome to your Grocery List</h1>
+<div id="item_input">
+	<p id="insert_calorie"><em id="insert_calories_2">Please enter your calorie limit: </em></p>
+	<form id="form">
+		<input type="text" id="calorie_input">
+		<input  type="reset" id="enter2" onclick="calorie_insert()" value="Enter">
+	</form>
+	<p><em>Please enter an item to add to the list:</em></p>
+	<form>
+		<input type="text" id="item_add">
+		<input  type="reset" id="enter" onclick=" calorie_count(); add_select(); click_enter(); over_amount();" value="Enter">
+	</form>
+	<div id="calorie_calculator">
+	<h3>Calorie Count: <p id="total"></p></h3>
+	</div>
+	<div id="validate">
+		<p id="question"> </p>
+		<div id="check_box">
+		</div>
+	</div>	
+</div>
+<div id="grocery_list">
+<h2>Grocery List</h2>
+	<ul id="ordered_list">
+	</ul>
+</div>
+<div id="food_images">
+	<h3 id="shopping_header">shopping cart:</h3>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

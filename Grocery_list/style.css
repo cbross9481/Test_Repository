@@ -1,0 +1,50 @@
+#header 
+{
+	font-family: Cooper Black;
+	color:green;
+}
+#item_input
+{
+	position:relative;
+	vertical-align: text-top;
+	border: 3px solid green;
+	width:30%;
+	padding:20px;
+}
+#grocery_list
+{
+	display:inline-block;
+	position:absolute;
+	border: 3px solid green;
+	width: 15%;
+	left: 35%;
+	padding:20px;
+	top:80px;
+ 
+}
+#food_images
+{
+	display:block;
+	position:relative;
+	width:70%;
+	height: 700px;
+}
+#calorie_calculator
+{
+	display:inline;
+	color:red;
+}
+
+#total
+{
+	display:inline;
+}
+#calorie_input
+{
+	width:40px;
+}
+#calorie_id
+{
+	font-weight: bold;
+	display:inline-block;
+}
