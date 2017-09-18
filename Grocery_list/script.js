@@ -42,7 +42,7 @@ function calorie_count() {
 	if (add == "orange juice"){
 		add = "oj"
 	}
-	item_calorie = calories[add] +" - "+ document.getElementById("item_add").value;
+	item_calorie = document.getElementById("item_add").value +" - "+ calories[add] + "cal.";
 	text = document.createTextNode(item_calorie);
 	para.appendChild(text);
 
