@@ -1,13 +1,3 @@
-track_1 = " | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "
-track_2 = " | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "
-player_a = "a"
-player_b = "b"
-
-winner_a = false
-
-
-track_1[0] = player_a 
-track_2[0] = player_b
 
 def initial_roll(track_1,track_2,player_a,player_b)
   roll_1 = rand(1..6)
@@ -82,9 +72,7 @@ def continuous_roll(track_1,track_2,player_a,player_b,advance_1,advance_2, winne
   (advance_2/2)
   
   
-  
   return winner_a if (advance_1 >= 78) || (advance_2 >= 78)
- 
   continuous_roll(track_1,track_2,player_a,player_b,advance_1,advance_2,winner_a)
 end
 
@@ -98,19 +86,5 @@ def announce_winner(winner_a)
   end 
 end 
 
-# def reset_screen
-#   clear_screen
-#   move_to_home
-# end
-
-# # Clears the content on the terminal.
-# def clear_screen
-#   print "\e[2J"
-# end
-
-# # Moves the insert point in the terminal to the upper left.
-# def move_to_home
-#   print "\e[H"
-# end
 
 
