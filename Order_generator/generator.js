@@ -91,25 +91,30 @@ function List_Removal(){
 
 var Order_list = (Order_List());
 //Order list before processing
+console.log("List of 30 Generated Orders")
 console.log(Order_list);
 console.log(" ");
 
 //Processing Orders
 var Orders = Order_Processing(Order_list);
+console.log("List of 10 randomly selected Order number")
 console.log(Orders);
 console.log(" ");
 
 //Update new List with processed orders removed
+console.log("List of remaining 20 Generated Orders")
 var Orders_list = List_Removal();
 console.log(Orders_list);
 console.log(" ");
 
 //Processing second round of Orders
 var Orders = Order_Processing(Order_list);
+console.log("List of 10 randomly selected Order number")
 console.log(Orders);
 console.log(" ");
 
 //Update new list with processed orders removed
 var Orders_list = List_Removal();
+console.log("List of remaining 10 Generated Orders")
 console.log(Orders_list);
 console.log(" ");
