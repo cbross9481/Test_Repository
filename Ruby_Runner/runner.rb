@@ -4,6 +4,7 @@ require_relative "ruby_runner"
 #Race tracks for both player A and player B created here
 track_1 = " | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "
 track_2 = " | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | "
+
 #assign letter "a" and letter "b" to represent the letters that will be passed through the tracks
 player_a = "a"
 player_b = "b"
